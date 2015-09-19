@@ -1,0 +1,5 @@
+bb3mobi_controller_ads:
+    path: /ads/{action}
+    defaults: { _controller: bb3mobi.ads.controller:route, action:'' }
+    requirements:
+        action: click|view|position|my

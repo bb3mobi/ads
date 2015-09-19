@@ -2,9 +2,9 @@
     "name": "bb3mobi/ads",
     "type": "phpbb-extension",
     "description": "Adds an easy to use Advertisement Manager to a phpBB3 forum.",
-    "homepage": "http://bb3.mobi",
+    "homepage": "http://phpbbguru.net",
     "keywords": ["ads", "advert", "banner", "ad units", "links", "block", "custom"],
-    "version": "1.0.11",
+    "version": "1.1.0",
     "time": "2015-07-05",
     "license": "GPL-2.0",
     "authors": [
@@ -15,12 +15,15 @@
         },
         {
             "name": "Anvar",
-            "homepage": "http://apwa.ru",
+            "homepage": "http://bb3.mobi",
             "role": "Converting to extension"
         }
     ],
     "require": {
         "php": ">=5.3.3"
+    },
+    "require-dev": {
+      "phpbb/epv": "dev-master"
     },
     "extra": {
         "display-name": "Advertisement Management",

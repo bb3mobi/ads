@@ -1,0 +1,42 @@
+<!-- INCLUDE overall_header.html -->
+
+<a name="maincontent"></a>
+
+<h2>{L_MY_ADS}</h2>
+
+<!-- IF S_AD_LIST -->
+
+	<!-- BEGIN ads -->
+	<div class="panel<!-- IF ads.S_ROW_COUNT is even --> bg2<!-- ELSE --> bg1<!-- ENDIF -->">
+		<div class="inner">
+			<div class="column1">
+				<dl class="details">
+					<dt><strong>{L_AD_ENABLED}{L_COLON}</strong></dt><dd>{ads.AD_ENABLED}</dd>
+					<dt><strong>{L_AD_VIEWS}{L_COLON}</strong></dt><dd>{ads.AD_VIEWS}<!-- IF ads.AD_VIEW_LIMIT --> [{L_AD_VIEW_LIMIT}{L_COLON} {ads.AD_VIEW_LIMIT}]<!-- ENDIF --></dd>
+					<dt><strong>{L_AD_CLICKS}{L_COLON}</strong></dt><dd>{ads.AD_CLICKS}<!-- IF ads.AD_CLICK_LIMIT --> [{L_AD_CLICK_LIMIT}{L_COLON} {ads.AD_CLICK_LIMIT}]<!-- ENDIF --></dd>
+				</dl>
+			</div>
+			<div class="column2">
+				<dl class="details">
+					<dt><strong>{L_AD_CREATED}{L_COLON}</strong></dt><dd>{ads.AD_TIME}<!-- IF ads.AD_TIME_END --> [{L_AD_TIME_END}{L_COLON} {ads.AD_TIME_END}]<!-- ENDIF --></dd>
+					<dt><strong>{L_AD_POSITIONS}{L_COLON}</strong></dt><dd>{ads.AD_IN_POSITIONS}</dd>
+					<dt><strong>{L_FORUMS}{L_COLON}</strong></dt><dd>{ads.AD_IN_FORUMS}</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="inner">
+			<div class="codebox" style="font-size: 1.2em;">
+				<p>{L_AD_CODE}{L_COLON}<a href="#" onclick="selectCode(this); return false;">{L_SELECT_ALL_CODE}</a></p>
+				<code>{ads.AD_CODE}</code>
+			</div>
+			<strong>{L_PREVIEW}{L_COLON}</strong><br />
+			<div class="attachbox">{ads.AD_CODE_DISPLAY}</div>
+		</div>
+	</div>
+	<!-- END ads -->
+
+	<br />
+	<p>{L_AD_LIST_NOTICE}</p>
+<!-- ENDIF -->
+
+<!-- INCLUDE overall_footer.html -->

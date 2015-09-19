@@ -39,8 +39,8 @@ if (empty($lang) || !is_array($lang))
 //
 
 $lang = array_merge($lang, array(
-	'ADVERTISEMENT_MANAGEMENT_CREDITS'		=> '<a href="http://bb3.mobi/">Advertisements</a> by <a href="http://www.lithiumstudios.org/">Advertisement Management</a>',
-	'MY_ADS'								=> 'Менеджер рекламы',
+	'ADVERTISEMENT_MANAGEMENT_CREDITS'	=> '<a href="http://bb3.mobi/forum/viewtopic.php?t=185" title="Менеджер рекламы">Advertisements by</a> <a href="http://www.lithiumstudios.org/">Advertisement Management</a>',
+	'MY_ADS'							=> 'Менеджер рекламы',
 
 	// Default Positions
 	'ABOVE_FOOTER'			=> 'Над нижним колонтитулом',
@@ -51,6 +51,7 @@ $lang = array_merge($lang, array(
 	'BELOW_FOOTER'			=> 'Под нижним колонтитулом',
 	'BELOW_HEADER'			=> 'Под верхним колонтитулом',
 	'BELOW_POSTS'			=> 'Под сообщениями',
+	'SIDEBAR_LEFT'			=> 'Левый сайдбар форума',
 	'SIDEBAR_RIGHT'			=> 'Правый сайдбар форума',
 	'EXTERNAL_BLOCK'		=> 'Внешний блок (Для интеграции с CMS)',
 

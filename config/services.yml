@@ -1,0 +1,24 @@
+services:
+    bb3mobi.ads.listener:
+        class: bb3mobi\ads\event\listener
+        arguments:
+            - @template
+            - @config
+            - @user
+            - @controller.helper
+            - @bb3mobi.ads.helper
+        tags:
+            - { name: event.listener }
+    bb3mobi.ads.helper:
+        class: bb3mobi\ads\core\helper
+        arguments:
+            - @template
+            - @config
+            - @user
+            - @request
+            - @dbal.conn
+            - %core.table_prefix%
+    bb3mobi.ads.controller:
+        class: bb3mobi\ads\controller\route
+        arguments:
+            - @bb3mobi.ads.helper

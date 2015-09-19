@@ -39,7 +39,7 @@ if (empty($lang) || !is_array($lang))
 //
 
 $lang = array_merge($lang, array(
-	'ADVERTISEMENT_MANAGEMENT_CREDITS'		=> '<a href="http://bb3.mobi/">Advertisements</a> by <a href="http://www.lithiumstudios.org/">Advertisement Management</a>',
+	'ADVERTISEMENT_MANAGEMENT_CREDITS'		=> '<a href="http://bb3.mobi/forum/viewtopic.php?t=185" title="My Advertisements">Advertisements by</a> <a href="http://www.lithiumstudios.org/">Advertisement Management</a>',
 	'MY_ADS'								=> 'My Advertisements',
 
 	// Default Positions
@@ -51,6 +51,7 @@ $lang = array_merge($lang, array(
 	'BELOW_FOOTER'			=> 'Below Footer',
 	'BELOW_HEADER'			=> 'Below Header',
 	'BELOW_POSTS'			=> 'Below Posts',
+	'SIDEBAR_LEFT'			=> 'Sidebar Left',
 	'SIDEBAR_RIGHT'			=> 'Sidebar Right',
 	'EXTERNAL_BLOCK'		=> 'External Block',
 
