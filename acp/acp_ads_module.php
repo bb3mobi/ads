@@ -14,7 +14,7 @@ namespace bb3mobi\ads\acp;
 /**
 * @package acp
 */
-class acp_ads
+class acp_ads_module
 {
 	var $u_action;
 	var $new_config = array();

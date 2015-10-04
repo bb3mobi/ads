@@ -149,7 +149,7 @@ class v_1_1_0 extends \phpbb\db\migration\migration
 
 			// Add ACP modules
 			array('module.add', array('acp', 'ACP_BOARD_CONFIGURATION', array(
-				'module_basename'	=> '\bb3mobi\ads\acp\acp_ads',
+				'module_basename'	=> '\bb3mobi\ads\acp\acp_ads_module',
 				'module_langname'	=> 'ACP_ADVERTISEMENT_MANAGEMENT',
 				'module_mode'		=> 'default',
 				'module_auth'		=> 'ext_bb3mobi/ads && acl_a_ads',

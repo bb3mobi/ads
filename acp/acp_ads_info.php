@@ -19,7 +19,7 @@ class acp_ads_info
 	function module()
 	{
 		return array(
-			'filename'	=> '\bb3mobi\ads\acp\acp_ads',
+			'filename'	=> '\bb3mobi\ads\acp\acp_ads_module',
 			'title'		=> 'ACP_ADVERTISEMENT_MANAGEMENT',
 			'version'	=> '1.0.0',
 			'modes'		=> array(
