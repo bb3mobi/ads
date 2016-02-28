@@ -11,8 +11,6 @@
 
 namespace bb3mobi\ads\controller;
 
-use Symfony\Component\HttpFoundation\Response;
-
 class route
 {
 	/** @var \bb3mobi\ads\core\helper */
