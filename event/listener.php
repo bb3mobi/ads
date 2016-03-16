@@ -53,6 +53,7 @@ class listener implements EventSubscriberInterface
 			'core.user_setup'			=> 'load_language_on_setup',
 			'core.page_header_after'	=> 'setup_ads',
 			'core.page_footer'			=> 'my_ads',
+			'core.permissions'			=> 'add_permission',
 		);
 	}
 
@@ -127,5 +128,19 @@ class listener implements EventSubscriberInterface
 				)
 			);
 		}
+	}
+	
+		/**
+	 * Add permissions
+	 *
+	 * @param object $event The event object
+	 * @return null
+	 * @access public
+	 */
+	public function add_permission($event)
+	{
+		$permissions = $event['permissions'];
+		$permissions['a_ads'] = array('lang' => 'ACL_A_ADS', 'cat' => 'misc');
+		$event['permissions'] = $permissions;
 	}
 }
